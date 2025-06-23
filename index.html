@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Alwan</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #121212;
+        color: #f0f0f0;
+      }
+
+      .hero {
+        background-color: #1e1e1e;
+        padding: 100px 20px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+      }
+
+      .hero img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 30px;
+        border: 3px solid #4caf50;
+      }
+
+      .btn-primary {
+        background-color: #4caf50;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #388e3c;
+      }
+
+      .section-title {
+        font-weight: 600;
+        margin-bottom: 40px;
+        color: #ffffff;
+      }
+
+      section {
+        padding: 80px 0;
+      }
+
+      .bg-dark-section {
+        background-color: #1e1e1e;
+      }
+
+      .project-list .project {
+        background-color: #2a2a2a;
+        border-radius: 6px;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-left: 5px solid #4caf50;
+        transition: background-color 0.3s ease;
+      }
+
+      .project:hover {
+        background-color: #333333;
+      }
+
+      footer {
+        background-color: #101010;
+        color: #ccc;
+        text-align: center;
+        padding: 30px 0;
+      }
+
+      input,
+      textarea {
+        background-color: #2e2e2e !important;
+        color: #fff !important;
+        border: 1px solid #444 !important;
+      }
+
+      label {
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container d-flex">
+        <img src="img/Alwan.jpg" alt="Foto Profil" />
+        <div>
+          <h1 class="display-5">Halo, Saya Muhammad Alwan</h1>
+          <p>Web Developer | UI/UX Designer | Freelancer</p>
+          <a href="#contact" class="btn btn-primary mt-3">Hubungi Saya</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-dark-section" id="about">
+      <div class="container text-center">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p class="mx-auto" style="max-width: 700px">
+          Saya adalah web developer yang fokus pada tampilan dan pengalaman
+          pengguna. Berpengalaman membuat website dengan HTML, CSS, JavaScript,
+          dan Bootstrap.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="section-title text-center">Portofolio</h2>
+        <div class="project-list">
+          <div class="project">
+            <h5>Sistem Informasi Akademik (Tugas Akhir)</h5>
+            <p>
+              Membuat sistem informasi berbasis web untuk manajemen data
+              mahasiswa dan jadwal kuliah menggunakan PHP dan MySQL.
+            </p>
+          </div>
+          <div class="project">
+            <h5>Website Company Profile Fiktif</h5>
+            <p>
+              Project latihan membuat website company profile sederhana
+              menggunakan HTML, CSS, dan Bootstrap sebagai bagian dari studi
+              mandiri.
+            </p>
+          </div>
+          <div class="project">
+            <h5>Landing Page Produk UMKM (Freelance)</h5>
+            <p>
+              Mengerjakan landing page sederhana untuk promosi produk keripik
+              lokal, bekerja sama dengan tetangga yang punya usaha kecil.
+            </p>
+          </div>
+          <div class="project">
+            <h5>Desain UI Aplikasi Kasir</h5>
+            <p>
+              Membuat prototipe desain antarmuka aplikasi kasir dengan Figma
+              untuk tugas kuliah UI/UX, fokus pada kemudahan penggunaan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-dark-section" id="contact">
+      <div class="container">
+        <h2 class="section-title text-center">Kontak</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Nama Kamu"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="email@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Pesan</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Tulis pesan..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Kirim Pesan
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>    
+      <p>&copy; 2024 Mhmmd_Alwan. Dibuat dengan semangat.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
